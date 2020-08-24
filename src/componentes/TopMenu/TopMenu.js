@@ -7,7 +7,7 @@ import './TopMenu.scss'
 export default function TopMenu () {
     return (
         <Navbar bg="dark" variant="dark" className="top-menu">
-            <Container style={{ 'margin-left': 0 }}>
+            <Container style={{ marginLeft: 0 }}>
                 <BrandNav />
                 <MenuNav />
             </Container>
