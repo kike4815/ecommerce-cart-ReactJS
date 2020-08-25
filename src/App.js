@@ -31,12 +31,13 @@ function App () {
         idsProducts.push(id)
         setProductsCart(idsProducts)
         localStorage.setItem(STORAGE_PRODUCTS_CART, productsCart)
+        getProductsCart()
         toast.success(`${name} añadido correctamente!!`)
     }
 
     return (
         <div className="App">
-            <TopMenu />
+            <TopMenu productsCart={productsCart} getProductsCart={getProductsCart} products={products} />
             <Products products={products} addProductCart={addProductCart} />
             <ToastContainer
                 position="bottom-left"

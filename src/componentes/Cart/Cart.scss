@@ -1,0 +1,118 @@
+.cart {
+
+    svg{
+        width: 30px;
+        fill: #fff;
+    }
+}
+.cart-content {
+    height: 100vh;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: #343a40;
+    text-align: left;
+    white-space: nowrap;
+    transition: width 1s;
+    z-index: 9;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid #4f5256;
+        height: 76px;
+
+        > div {
+            &:first-of-type {
+                display: flex;
+                svg{
+                    width: 12px;
+                    margin-right: 20px;
+                    fill: #fff;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                h2{
+                   color: #fff;
+                   margin: 0;
+                   font-size:24px;  
+                }
+            }
+        }
+        button {
+            margin: 0;
+            color:#fff;
+
+            &:hover{
+                text-decoration: none;
+                color:blue;
+                svg{
+                    fill:blue
+                }
+            }
+            svg{
+                width: 20px;
+                height: 20px;
+                fill: #fff;
+                margin-left: 10px;    
+            }
+        }
+    }
+.cart-content__products {
+    height: calc(100vh - 76px - 119px);
+    overflow-y: scroll;
+    }
+.cart-content__product {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #4f5256;
+
+    img {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .cart-content__product-info {
+        color: #fff !important;
+        width: 100%;
+
+        h3 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 16px;
+        }
+
+        > div {
+        &:first-of-type {
+            border-bottom: 1px solid #4f5256;
+        }
+        &:last-of-type {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                margin: 0;
+            }
+            button {
+                background-color: #0098d3;
+                border-color: #0098d3;
+                color: #fff;
+                border-radius: 5px;
+                margin: 0 5px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+        }
+    }
+    }
+    
+    
+}
