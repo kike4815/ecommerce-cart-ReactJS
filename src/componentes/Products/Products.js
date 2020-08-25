@@ -4,7 +4,7 @@ import Loading from '../Loading'
 import Product from '../Product'
 
 export default function Products (props) {
-    const { products: { loading, result, error }, addProductCart } = props
+    const { products: { loading, result }, addProductCart } = props
 
     return (
         <Container>

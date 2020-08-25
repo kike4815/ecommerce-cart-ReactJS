@@ -114,5 +114,33 @@
     }
     }
     
+.cart-content__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #4f5256;
+    padding: 15px;
     
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color:#fff;
+
+        p {
+            &:last-of-type{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+    button {
+        background-color: #0098d3;
+        width: 100%;
+        border: 0;
+        font-size: 20px;
+    }    
+}
+
 }
